@@ -1,0 +1,18 @@
+<script>
+dataArray=new Array("a","b","c","D");
+testArray=new Array("a","b","x","w")
+
+function getMatch(a, b) {
+    var matches = [];
+
+    for ( var i = 0; i < a.length; i++ ) {
+        for ( var j = 0; j < b.length; j++ ) {
+            if ( a[i] === b[j] ) matches.push( a[i] );
+        }
+    }
+    document.write(matches);
+}
+
+getMatch(dataArray, testArray);
+
+</script>
